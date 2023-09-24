@@ -1,0 +1,39 @@
+$size : 200px;
+
+div.circle{
+	width: 200px;
+	height: 200px;
+	border-radius:50%;
+	background: red;
+	position: relative;
+	animation: mymove 2s infinite;
+  }
+  
+  @function zoom($size){
+	@return $size * .2;
+  }
+
+  @mixin size($size){
+	width:zoom($size);
+	height:zoom($size);
+  }
+
+  @keyframes mymove {
+	0% {
+	
+		top: 0px;
+		$size:zoom($size);
+		@include size($size);
+		
+	}
+	50% {top: 200px;
+	
+		@include size($size);
+	
+	}
+	100% {top:0px;
+		$size:zoom($size);
+		@include size($size);
+	}
+  }
+  

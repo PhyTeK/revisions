@@ -1,0 +1,103 @@
+Git Uppgifter
+=============
+
+1) Skapa en repository (repo) med namnet "project"
+
+Svar: Skapa en mapp som hetter "project"
+      Gå in i mappen "project" (cd project"
+      git init .
+
+2) Kontrollera status av den nya repo.
+
+Svar: git status
+
+3) Addera alla filer i mappen "project" and gör en "commit".
+
+Svar: git add .
+      git status (kontrolera att alla filer du vill ha finns med)
+      git commit -m "First commit"
+      git status
+
+4) Söker hjäp om "commit"-kommando
+
+Svar: git help commit
+
+5) Titta på skillnaderna du har gjort i filerna
+
+Svar: git diff file1
+
+6) Läs hela historia av en repo
+
+Svar: git log
+
+7) Ignorera några filer eller sökvägar.
+
+Svar: I samma mapp som "project" redigera/skappa en fil som heter .gitignore
+I varje rad skriv filen som du vill inte ha i git system t.ex:
+
+image1.jpg
+database.sql
+*.map
+mappen/
+
+Test
+===
+
+Vilka kommandon nedan skulle spara ändringarna av myfile.txt till en
+befintlig lokal Git-Repo? 
+
+1. git commit -m "my recent changes"
+
+2. git init myfile.txt
+   git commit -m "my recent changes"
+3. git add myfile.txt
+   git commit -m "my recent changes"
+4. git commit -m myfile.txt "my recent changes"
+
+Svar:
+
+1. Skulle bara skapa en incheckning om filer redan har mellanlagrats (stage).
+2. Skulle försöka skapa ett nytt arkiv i en mapp "myfile.txt".
+3. Är korrekt: lägg först till filen i mellanlagringsområdet och sedan "commit".
+4. Skulle försöka "commit" en fil "my recent change" med meddelandet "myfile.txt".
+
+Branches
+========
+
+1. Skapa en ny branch med namn "html"
+
+Svar: git branch html
+      git switch html
+      git branch  # För att lista alla lokala branches.
+
+Merging
+======
+
+1. Merge branch html back to master.
+
+Svar: git branch  (kontrollera att du befinner dig i master branch)
+      git merge html
+
+Delete branch
+============
+1. Ta bort branchen html
+
+Svar: git branch  (Kontrollera att du är i master branch)
+      git branch -d html
+
+
+Clone & Pull
+============
+
+1. Klona en Github repo till en lokal mappen
+
+Svar: git clone git clone https://github.com/coderefinery/recipe-before-merge.git newrepo
+
+
+Push
+====
+
+1. Gör en backup på din lokal repo till existerande repo på Github
+
+Svar: git remote add github https://github.com/myName/myrepo.git
+      git push github master

@@ -1,0 +1,35 @@
+button {
+  background-color: #0dff00;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+}
+.container section.content {
+  color: #8400ff;
+}
+.container section.content-xl {
+  color: #8400ff;
+}
+.container section.content-sm {
+  color: #8400ff;
+}
+.container section.content-lg {
+  color: #8400ff;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,6 @@
+Layout
+======
+
+1. Skriv HTML-kod och CSS-Kod för att replikera bild layout1.png om skärmens bredden är större än 500px och layout2.png om skärmens bredden är mindre eller lika än 500px.
+
+Svar: layout.html och layout.css

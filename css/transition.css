@@ -1,0 +1,10 @@
+p {
+
+    font-size: 1rem;
+    transition: font-size 2s;
+}
+
+p:active {
+    font-size:5rem;
+}
+    

@@ -1,0 +1,26 @@
+div.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+    width: 8px;
+    height: 8px;
+  }
+  50% {
+    top: 200px;
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    top: 0px;
+    width: 8px;
+    height: 8px;
+  }
+}/*# sourceMappingURL=aniCircle2.css.map */

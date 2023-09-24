@@ -1,0 +1,60 @@
+Animation
+========
+
+1. Transition = Övergång mella två lägen
+
+Ex. Transition av en CSS egenskap i delay sekunder
+transition: property delay;
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}              
+
+Uppgift:
+
+Skriv HTML och CSS -kod för att en paragraf byter font storleken från 1rem till 5 rem när man click den.
+
+Svar:
+transition.html och transition.css
+
+2. Animation
+
+För exempel:
+
+div {
+ animation animate 2s infinite;
+}
+
+@keyframes animate {
+    from {left:0px}
+    to {left:200px}
+ }
+
+animation är en förkortning i ording av:
+
+animation-name:	          Specifies the name of the keyframe you want to bind to the selector
+animation-duration:	  Specifies how many seconds or milliseconds an animation takes to complete
+animation-timing-function:Specifies the speed curve of the animation
+animation-delay:          Specifies a delay before the animation will start
+animation-iteration-count:Specifies how many times an animation should be played
+animation-direction:      Specifies whether or not the animation should play in reverse on alternate cycles
+animation-fill-mode:      Specifies what values are applied by the animation outside the time it is executing
+animation-play-state:     Specifies whether the animation is running or paused
+initial:                  Sets this property to its default value. Read about initial
+inherit:                  Inherits this property from its parent element. Read about inherit
+
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+
+Uppgift:
+
+Skriv HTML- CSS- koderna för att en röd cirkeln hoppar upp och ner.
+
+Svar: animCircle.html och animCircle.css
+

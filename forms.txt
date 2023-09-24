@@ -1,0 +1,18 @@
+Forms
+=====
+
+1. Skapa en form som ser likadan som på bilden form.png
+
+Svar: forms.html
+
+"name" attribut behövs i backend för att updatera databasen.
+
+"id" Ska vara unik!! och ha flera roler som t.ex css selektor, för at
+identifiera ett specifik fällt i databasen. id används också i
+JavaScript för att identifiera ett element.
+
+
+Query String
+============
+
+?name=value
