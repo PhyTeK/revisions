@@ -2,6 +2,7 @@ header {
     background-color: red;
     border: 5px solid grey;
     border-radius: 10px;
+    padding:10px;
 }
 
 header .navigation {
@@ -51,6 +52,9 @@ section:hover {
 
 }
 
+.snet {
+    transform: rotate(20deg);
+}
 .image-container {
     width: 400px;
     border: 1px solid burlywood;
@@ -58,4 +62,12 @@ section:hover {
 
 .image {
     width: 100%;
+}
+
+section.color.font {
+    color:red;
+}
+
+section .color {
+    
 }

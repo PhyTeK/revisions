@@ -4,5 +4,5 @@ Rubriker
 1. Skriv html-kod som producerar en websidan som ser ut som pdf
 dokument: Awesomeness.pdf
 
-Svar: Se filen rubrics.html
+Svar: Se filen rubrics.html och index.css
 

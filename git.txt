@@ -11,7 +11,7 @@ Svar: Skapa en mapp som hetter "project"
 
 Svar: git status
 
-3) Addera alla filer i mappen "project" and gör en "commit".
+3) Addera några filer i mappen "project" och gör en "commit".
 
 Svar: git add .
       git status (kontrolera att alla filer du vill ha finns med)
@@ -32,7 +32,8 @@ Svar: git log
 
 7) Ignorera några filer eller sökvägar.
 
-Svar: I samma mapp som "project" redigera/skappa en fil som heter .gitignore
+Svar: I samma mapp som "project" redigera/skappa en fil som heter 
+
 I varje rad skriv filen som du vill inte ha i git system t.ex:
 
 image1.jpg
@@ -91,7 +92,7 @@ Clone & Pull
 
 1. Klona en Github repo till en lokal mappen
 
-Svar: git clone git clone https://github.com/coderefinery/recipe-before-merge.git newrepo
+Svar: git clone https://github.com/coderefinery/recipe-before-merge.git newrepo
 
 
 Push

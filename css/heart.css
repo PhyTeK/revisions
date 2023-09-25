@@ -31,8 +31,7 @@ body {
   position: relative;
   width: 100px;
   height: 100px;
-  transform: rotate(45deg);
-  background-color: red;
+  background-color: blue;
   animation: heart 1.5s infinite;
   /* animation: rotate 2s linear infinite; */
 }
@@ -44,7 +43,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: red;
+  background-color: blue;
 }
 
 .heart::before {

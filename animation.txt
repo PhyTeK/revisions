@@ -29,7 +29,7 @@ transition.html och transition.css
 För exempel:
 
 div {
- animation animate 2s infinite;
+ animation: animate 2s infinite;
 }
 
 @keyframes animate {
