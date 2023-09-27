@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercices</title>
+	<link rel="stylesheet" href="css/anim.css">
+</head>
+
+<body>
+	The default HTML & CSS code are:
+	<code>
+		<pre>
+&lt;html>
+  &lt;body>
+     &lt;div class="box">&lt;/div>
+  &lt;/body>
+&lt;/html>
+
+.box {
+	width:280px;
+	height:280px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family: "Inconsolata", monospace;
+	font-size: 28px;
+	border:1px solid #c39f76;
+	box-sizing:border-box;
+}
+
+		</pre>
+	</code>
+<hr>
+	<p>Write CSS codes to produce the following results:</p>
+	<ol>
+		<li>
+			<details><code><pre>
+.box::before { content:"Hello World"; }
+			</pre></code>
+				<summary>
+					<div class="box box1"></div>
+				</summary>
+			</details>
+		</li>
+		<li>
+			<details>
+				<code>
+					<pre>
+&::after{width:70px;content:'Hello World';}
+					</pre>
+				</code>
+				
+				<summary>
+					<div class="box box2"></div>
+				</summary>
+			</details>
+		</li>
+		<li><details>
+			<code>
+				<pre>
+::before{content:"Hello"}::after{content:"World";scale:1 -1}
+</pre>
+			</code>
+			<summary>
+				<div class="box box3"></div>		
+			</summary>
+		</details></li>
+		<li>
+			<details>
+				<code><pre>
+box-shadow: -150px 0 #000 inset;
+&::before {
+	content: "Hello ";
+}
+&::after {
+	content: "World";
+	color: #fff;
+}
+
+
+				</pre></code>
+				<summary><div class="box box4"></div></summary>
+			</details>
+		</li>
+<li>
+	<details>
+		<code>
+			<pre>
+&::after {
+	content: 'Hello World';
+	text-indent: -12ch;
+	text-shadow: 12ch 0, 12ch 0;
+	animation: m 2s linear 9e7
+}
+@keyframes m {
+	to {
+		text-indent: -12ch;
+	}
+}
+			</pre>
+		</code>
+<summary>
+	<div class="box box5"></div>
+</summary>
+	</details>
+</li>
+<li>
+	<details>
+		<code>
+			<pre>
+&::after {
+	content: "";
+	width: 200px;
+	height:200px;
+	border-radius: 50%;
+	box-shadow: inset 30px -30px 0 16px #c39f76;
+}
+			</pre>
+		</code>
+		<summary>
+			<div class="box box6"></div>
+		</summary>
+	</details>
+</li>
+<li>
+	<details>
+		<code>
+			<pre>
+&::after, &::before {
+	content: '';
+	position: absolute;
+	border: 20px solid #c39f76;
+	padding: 18%;
+}
+&::after {
+	border: 0;
+	border-top: 4em solid #fff;
+	padding: 25% 7%;
+}
+			</pre>
+		</code>
+		<summary>
+			<div class="box box7"></div>
+		</summary>
+	</details>
+</li>
+<li>
+	<details>
+		<code>
+			<pre>
+&::after {
+	content: '';
+	background: #c39f76;
+	padding: 25px 99px;
+	border-radius: 2ch;
+	}				
+			</pre>
+		</code>
+		<summary>
+			<div class="box box8"></div>
+		</summary>
+	</details>
+</li>
+<li>
+	<details>
+		<code>
+			<pre>
+&::after{
+	content: "";
+	border: 70px solid #c39f76;
+}				
+			</pre>
+		</code>
+		<summary>
+			<div class="box box9"></div>
+		</summary>
+	</details>
+</li>
+
+
+
+
+		<li
+			<details>
+				<code>
+					<pre>
+.box{
+	* { 
+		background: #006cff;
+		overflow: clip;
+	}
+	.box::after {
+		content: '';
+		padding: 70%;
+		background:
+			radial-gradient(#0000 30%,#ffff 33%) center/99%99%,
+			radial-gradient(#000 20%, #0000 23%) center/99%99%,
+			repeating-conic-gradient(#000 0 6%, #fff 0 10%);
+		mix-blend-mode: lighten;
+		filter: blur(12q) contrast(30);
+		animation: p 1s 9e9 linear;
+	}
+	
+	@keyframes p {
+		30%, 70% {
+			background-size: 80%80%, 120%120%, auto;
+		}
+	}
+}
+		</pre>
+				</code>
+
+				<summary>
+					<div class="box box11"></div>
+				</summary>
+			</details>
+		</li>
+	</ol>
+</body>
+
+</html>

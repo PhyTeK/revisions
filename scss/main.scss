@@ -1,0 +1,6 @@
+@use 'mixins';
+
+.box {
+  @include mixins.box(10px,blue);
+  border:5px dashed red;
+}

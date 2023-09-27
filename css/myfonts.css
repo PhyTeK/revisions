@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,200&family=Sofia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,200&family=Sofia&display=swap');
+
+.font1 {
+	font-family: "Sofia",'Times New Roman', Times, serif;
+	text-shadow: 3px 3px 3px;
+}
+
+.font2 {
+	font-family: "Roboto",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

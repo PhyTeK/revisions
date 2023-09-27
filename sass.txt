@@ -1,0 +1,78 @@
+SASS = Syntactically Awesome Stylesheet
+
+* Preprocessor för CSS
+* Helt kompatible med CSS alla versioner
+* DRY Don't repeat yourself
+
+Variabler
+========
+
+Uppgift:
+
+1) Definiera och deklarerar tre variabler: primary_1, primary_2 och primary_3 som tar värde av tre olika färger.
+2) Använder variablerna i tre klasser, section_1, section_2 och section_3 som font färger.
+
+
+Mappar
+======
+
+1) Skapa en map "sizes" med olika textstorleken "small", "normal" och "large" som motsvara 12px, 18px och 24px
+2) Skriv ut på skärmen alla nyklar av mapen "sizes"
+3) Hämta värden "small" av mapen "sizes" i alla paragrafer av en section.
+
+Mixin
+=====
+1) Skapa en "mixin" mobile med en @media som som använder när skärmen bredd är mindre än 700px.
+   mixin ska innehåller en @content
+2) Använder mixin mobile i en kontainer klass med hjälp av @include mixins.mobile. Där deklareras utseende av webbsidan i en mobil.
+
+
+Funktioner
+==========
+
+Inbyggda och egna funktioner
+
+1) Söker en funktion i SASS som returnerar enheten. T.ex om argument är 3px ska funktion returnera px.
+2) Söker en funktion i SASS som omvandlar ett färg i gråskala med samma ljushet som färgen.
+3) Skriv din egen funktion som multiplicerar två tal och returnerar produkten av dessa.
+
+Partials
+========
+
+Uppgift:
+
+1) Skapa 3 "partials" filer för alla variabler, "mixing" och funktioner.
+2) Använder @use to import varje "partials" i en main.scss fil.
+
+Inbyggda moduler
+================
+
+sass:color
+sass:map
+sass:math
+sass:meta
+sass:selector
+sass:string
+
+
+Exempel:
+
+@use 'sass:color';
+
+color.red()   /* Hämta röd kanal */
+color.lightness() /* Hämta ljushet */
+
+@use 'sass:math'
+math.$pi;
+math.$max-number;
+math.$max-safe-integer;
+
+
+@use "sass:string";
+string.quote(Helvetica);
+string.length($string);
+string.split("Segoe UI Emoji", " "); // ["Segoe", "UI", "Emoji"]
+string.to-upper-case("Bold");
+
+
+

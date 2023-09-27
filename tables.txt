@@ -1,0 +1,26 @@
+Tables
+======
+
+Uppgifter
+
+1) Skapa en tabell med 10 kolumner och 10 rader.
+   Header och side-header (som är den första kolumn i tabeln) ska vara i fetstil.
+
+   Varje data element i tabeln ska en klass "data" som attribut.
+
+     1 2 3 4 5 6 7 8 9 10
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   10
+
+2) Skriv funktion "multi" i SASS. funktionen ska returnera produkten av den första och andra argument $row * $col.
+
+Använder funktionen "multi()" i klassen "data" för att skapa en multiplikation tabell.
+
