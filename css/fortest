@@ -1,0 +1,12 @@
+
+$n:0;
+@for $row from 1 to 11 {
+	@for $col from 1 to 11 {
+		$n:$n+1;
+		table>tbody>tr>td::nth-child(#{$n})::before {
+			content:multi($row,$col);
+		}
+
+	}
+}
+ */
